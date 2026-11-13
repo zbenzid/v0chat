@@ -21,9 +21,10 @@ import unicodedata
 
 TAGS = {
     "visuel": ["visuel", "plan", "image", "visual", "b-roll", "broll"],
-    "texte": ["texte", "écran", "ecran", "txt", "on-screen", "onscreen", "text", "titre"],
+    "texte": ["texte", "écran", "ecran", "txt", "on-screen", "onscreen", "text", "carton"],
     "vo": ["vo", "voix", "voix off", "dit", "parole", "voiceover", "voice"],
     "legende": ["légende", "legende", "caption", "description"],
+    "meta": ["titre", "title", "sujet", "cible", "durée", "duree", "format", "plateforme", "note", "notes", "objectif"],
 }
 TAG_RE = re.compile(r"^\s*[-*]?\s*\**\s*([A-Za-zÀ-ÿ \-]{1,12}?)\s*\**\s*[:：]\s*(.*)$")
 TIME_PREFIX_RE = re.compile(r"^\s*(\[[^\]]{0,20}\]|\(?\d{1,2}[:h]\d{2}\)?|\(?\d{1,3}(?:[.,]\d)?\s*-\s*\d{1,3}(?:[.,]\d)?\s*s\)?)\s*[-–—:]?\s*")
@@ -31,9 +32,12 @@ TIME_PREFIX_RE = re.compile(r"^\s*(\[[^\]]{0,20}\]|\(?\d{1,2}[:h]\d{2}\)?|\(?\d{
 GREETINGS = [r"\bsalut\b", r"\bbonjour\b", r"\bhello\b", r"\bcoucou\b", r"\bhey\b",
              r"aujourd'hui,? (je|on) va", r"dans cette vid[ée]o", r"bienvenue",
              r"je vais vous parler", r"je vais te parler", r"avant de commencer"]
-BAIT = [r"\blike si\b", r"\bcommente? (oui|non|\"?oui\"?)\b", r"\btague?s?\b.*\bamis?\b",
-        r"\bidentifie\b.*\b(amis?|personnes?)\b", r"partage[sz]? (à|a) \d+",
-        r"\bdouble[- ]tap\b", r"mets? un like", r"lâche un like", r"tag (\d|un|trois|3)"]
+BAIT = [r"\blike[sz]? si\b", r"\blikez\b", r"\bcommente[sz]? (?:\"|«\s*)?(?:oui|non)\b",
+        r"\btague[sz]?\b.*\b(?:amis?|personnes?|potes?)\b", r"\btaguez\b",
+        r"\bidentifie[sz]?\b.*\b(?:amis?|personnes?|potes?)\b",
+        r"\bpartage[sz]? (?:à|a) \d+", r"\bpartage[sz]? si\b", r"\bdouble[- ]tap\b",
+        r"\bmet(?:s|tez) un like\b", r"\bl[âa]che[sz]? un like\b", r"\btag (?:\d|un|trois)\b",
+        r"\bdis(?:-moi|-nous)? oui en commentaire\b", r"\bmet(?:s|tez) un \S+ en commentaire\b"]
 ENDINGS = [r"merci d'avoir regard", r"merci pour votre attention", r"[àa] bient[ôo]t",
            r"[àa] la prochaine", r"ciao", r"bye", r"abonne[- ]toi", r"abonnez[- ]vous",
            r"n'oublie(z)? pas de (t'abonner|vous abonner|liker)"]
@@ -58,7 +62,7 @@ def norm_tag(raw):
 
 
 def parse(text):
-    tracks = {"visuel": [], "texte": [], "vo": [], "legende": []}
+    tracks = {"visuel": [], "texte": [], "vo": [], "legende": [], "meta": []}
     tagged = False
     current = None
     for raw in text.splitlines():
@@ -80,7 +84,7 @@ def parse(text):
             tracks["vo"].append(line)
     if not tagged:
         tracks = {"visuel": [], "texte": [], "vo": [l for l in tracks["vo"] if not l.startswith("#")],
-                  "legende": []}
+                  "legende": [], "meta": []}
     return tracks, tagged
 
 

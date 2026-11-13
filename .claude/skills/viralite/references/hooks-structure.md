@@ -65,7 +65,7 @@ En français, viser le bas de la fourchette (règle maison : mots plus longs, li
 
 ## Appels à l'action
 
-- **Un seul CTA.** Placé dans la phrase finale, à l'écran sur le dernier plan, ou dans la légende — pas en milieu de vidéo.
+- **Un seul CTA.** À l'écran sur le dernier plan et/ou dans la légende ; dans la voix off seulement s'il est fondu dans la phrase de résolution (voir A12). Jamais en milieu de vidéo.
 - **Le plus aligné avec les signaux** : l'envoi. « Envoie ça à la personne qui fait encore ses devis sur Excel. » Le partage est un acte relationnel (étude NYT sur la psychologie du partage) : nommer une personne précise.
 - **Enregistrement** : « Garde-le pour ton prochain tournage » quand le contenu est une référence à réutiliser.
 - **« Commente MOT »** : toléré par Instagram seulement si la ressource promise est réellement envoyée (guide, lien).

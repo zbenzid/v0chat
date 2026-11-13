@@ -1,0 +1,13 @@
+Titre : 3 automatisations IA pour les artisans
+VISUEL: Animation du logo SolidFlow, puis fond dégradé bleu avec icône robot
+TEXTE: L'IA pour les artisans
+VO: Bonjour à tous ! Aujourd'hui on va voir ensemble trois automatisations d'intelligence artificielle qui vont vous faire gagner un temps fou dans votre activité d'artisan.
+VISUEL: Icône mail animée
+VO: Première automatisation : les mails. L'IA peut répondre à vos clients automatiquement.
+VISUEL: Icône document animée
+VO: Ensuite, les devis. Vous dictez le chantier et l'IA rédige le devis complet en deux minutes.
+VISUEL: Icône calendrier animée
+VO: Et puis les rendez-vous, l'IA les planifie toute seule.
+VO: Avec ces trois outils, vous gagnerez toujours au moins 10 heures par semaine, c'est garanti.
+VO: Merci d'avoir regardé, abonnez-vous pour plus de conseils et commentez OUI si vous voulez la suite !
+LÉGENDE: L'IA au service des artisans 🔨 #ia #artisan #btp #automatisation #productivite #entrepreneur #business

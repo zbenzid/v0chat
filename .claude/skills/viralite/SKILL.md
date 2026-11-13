@@ -23,7 +23,7 @@ Repère, en le déduisant du script plutôt qu'en questionnant l'utilisateur :
 - la cible (qui doit se reconnaître) et la promesse (ce que le spectateur obtient) ;
 - les trois pistes : **visuel / plan**, **texte à l'écran**, **voix off ou parole**. Si le script ne les sépare pas, c'est déjà un constat (critère 6).
 
-Ne pose une question que si l'absence d'information empêche vraiment le contrôle (par exemple on ne sait pas de quoi parle la vidéo).
+Ne pose une question que si l'absence d'information empêche vraiment le contrôle (par exemple on ne sait pas de quoi parle la vidéo). Pour une incertitude secondaire (la marque citée est-elle celle de l'auteur ou un partenaire ? la musique est-elle libre de droits ?), formule la correction sous condition et continue.
 
 ### 2. Lancer les mesures automatiques
 
@@ -33,7 +33,9 @@ Enregistre le script dans un fichier texte puis lance :
 python3 -I <chemin-du-skill>/scripts/script_stats.py <fichier-script> [--platform reels|tiktok|shorts]
 ```
 
-Le script compte les mots par piste, estime la durée, repère les phrases trop longues, les « et puis », les ouvertures par salutation, les appâts à engagement, les fins en « merci d'avoir regardé », les absolus improuvables et les hashtags. Convention conseillée pour les lignes du script : `VISUEL:`, `TEXTE:`, `VO:` (accepte aussi `PLAN:`, `ÉCRAN:`, `VOIX:`). Sans balises, tout le texte est traité comme parlé.
+Le script compte les mots par piste, estime la durée, repère les phrases trop longues, les « et puis », les ouvertures par salutation, les appâts à engagement (tutoiement et vouvoiement), les fins en « merci d'avoir regardé », les absolus improuvables et les hashtags. Convention conseillée pour les lignes du script : `VISUEL:`, `TEXTE:`, `VO:`, `LÉGENDE:` (accepte aussi `PLAN:`, `ÉCRAN:`, `VOIX:`). Les lignes `TITRE:`, `CIBLE:`, `DURÉE:`, `NOTES:` sont des métadonnées ignorées. Sans balises, tout le texte est traité comme parlé.
+
+Les détections par mots-clés ont des trous (formulations inédites) et des faux positifs : relis toujours le script toi-même pour chaque critère.
 
 Ces mesures sont des indices, pas un verdict : un « et puis » peut être légitime, une phrase de 17 mots peut passer. C'est toi qui juges.
 
@@ -55,7 +57,7 @@ Utilise exactement ce gabarit (en français) :
 
 **Verdict : GO | GO AVEC CORRECTIONS | NO GO**
 **Note : <xx>/100** (avertissements) — Bloquants : <n> échoué(s) sur 7
-Plateforme : <…> · Durée estimée : <…> s · Mots parlés : <…>
+Plateforme : <…> · Durée estimée : <min>-<max> s (170 mots/min → 2 mots/s) · Mots parlés : <…>
 
 ## En une phrase
 <La promesse du script en une phrase, et le principal risque.>
@@ -105,3 +107,7 @@ Si le verdict n'est pas GO, propose à la fin le script complet corrigé dans le
 ## Limites à rappeler si l'utilisateur s'appuie fortement sur un chiffre
 
 La base de ce skill vient d'une recherche de novembre 2026 menée sans accès direct aux pages sources ni à Reddit : citations et chiffres sont de seconde main. Le rapport complet est dans `reports/Viralité reels algorithme et hooks.md` à la racine du dépôt, s'il est présent.
+
+## Exemple
+
+`examples/script-artisans-ia.txt` (script d'entrée) et `examples/rapport-artisans-ia.md` (rapport attendu, verdict NO GO) montrent le niveau de précision visé : chaque constat cite la ligne, chaque correction est directement utilisable en production.

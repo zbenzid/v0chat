@@ -8,7 +8,7 @@ Niveau de preuve : **OFFICIEL** (plateforme ou loi), **ÉTUDE** (données, souve
 Un Reel est moins recommandé s'il est muet, flou ou en basse résolution, s'il porte des bordures, des logos ou filigranes d'autres applications, si le texte couvre la majorité de l'image, ou s'il n'est pas original.
 - Durée ≤ 3 min (au-delà, plus recommandé aux non-abonnés).
 - Vertical 9:16, piste audio audible (voix, musique de la bibliothèque ou son original).
-- Aucun logo TikTok/CapCut ou autre plateforme. Le logo de la marque est toléré.
+- Aucun logo TikTok/CapCut ou autre plateforme. Le logo de la marque est toléré pour l'éligibilité (discret dans un coin, ou sur le dernier plan) — mais jamais en ouverture, ce qui ferait échouer B7.
 - Pas de contenu repris d'autrui : ajouter un filigrane, accélérer ou créditer ne rend pas original.
 - Le script ne prévoit pas un écran rempli de texte (motion design : vérifier que les cartons texte laissent de l'image).
 
@@ -23,11 +23,11 @@ Test : souligne chaque affirmation factuelle et demande « d'où vient la preuve
 Meta rétrograde les demandes explicites de likes, commentaires, partages ou tags : « like si », « commente OUI », « tague 3 amis », « partage à 10 personnes », erreurs volontaires pour provoquer des corrections. Toléré : un CTA « commente MOT » qui livre réellement une ressource (guide, lien), et un « envoie ça à la personne qui… » sincère.
 
 ### B5. Promesse tenue — PRATICIEN convergent + logique des signaux de satisfaction
-Écris la promesse du hook en une phrase. La dernière phrase de contenu doit y répondre exactement. Si le hook promet « 3 erreurs », il y en a 3 ; si le hook promet un résultat, la vidéo montre comment. Un hook qui surpromet est bloquant.
+Écris la promesse du hook en une phrase. La dernière phrase de contenu doit y répondre exactement. Si le hook promet « 3 erreurs », il y en a 3 ; si le hook promet un résultat ou un bénéfice (« gagner du temps »), la vidéo montre **comment** ou le **prouve** (démonstration, avant/après, chiffre réel) — nommer les éléments sans les montrer ne suffit pas. Un hook qui surpromet est bloquant.
 
 ### B6. Hook en trois couches — PRATICIEN (Kallaway)
 Le script spécifie séparément : (a) la première image ou action, (b) le texte affiché en gros (distinct des sous-titres), (c) la première phrase dite. Les trois portent la même idée. Le texte à l'écran n'est pas la transcription de la phrase.
-Bloquant si une seule couche est prévue ; à corriger si deux.
+Échec si une couche manque **ou** si les trois couches existent mais portent des idées différentes (logo + titre générique + salutation = échec). Exception unique : une vidéo volontairement sans parole (texte + musique) passe avec deux couches alignées (visuel + texte).
 
 ### B7. Fenêtre du hook — OFFICIEL (3 s) + PRATICIEN (découpage)
 - Sujet identifiable dès la première seconde.
@@ -51,7 +51,7 @@ Entre deux temps consécutifs, « mais » ou « donc » doit pouvoir relier. Si 
 Chaque phrase fait avancer la promesse ; supprimer toute phrase qui peut partir sans casser le sens. Un seul sujet. Le milieu est une liste, des étapes ou une histoire — pas un mélange.
 
 ### A12. Fin — PRATICIEN
-La résolution est la dernière phrase. Rien après : ni récapitulatif, ni « merci d'avoir regardé », ni « abonne-toi ». Une fin qui reboucle sur la première image est un plus (aucun bonus de classement confirmé, mais le temps de visionnage monte).
+La résolution est la dernière phrase dite. Rien après : ni récapitulatif, ni « merci d'avoir regardé », ni « abonne-toi ». Le CTA va **à l'écran sur le dernier plan et/ou dans la légende**, pas dans une phrase supplémentaire. Seule exception : un CTA d'envoi fondu dans la phrase de résolution elle-même (« … et si ton associé fait encore ses devis le soir, envoie-lui ça. »). Une fin qui reboucle sur la première image est un plus (aucun bonus de classement confirmé, mais le temps de visionnage monte).
 
 ### A13. Durée et nombre de mots — ÉTUDE (durée) + PRATICIEN (débit) + RÈGLE MAISON (français)
 - Reels : 30-60 s par défaut (meilleur reach chez Socialinsider 2026 : 5,6 % ; 45-60 s meilleur engagement). 60-90 s si le contenu le justifie. Au-delà de 90 s le reach baisse nettement.
